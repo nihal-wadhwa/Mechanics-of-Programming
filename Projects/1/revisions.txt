@@ -1,0 +1,23 @@
+commit dcd6da8ac3bd7cb6603f46795f0ea6f64a486944
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Thu Oct 1 20:35:24 2020 -0400
+
+    Dealt with unused argc parameter
+
+commit d5b9247b4c5f19a53cf40c31593a1078c19290e7
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Thu Oct 1 16:40:56 2020 -0400
+
+    Got rid of some excess code
+
+commit 6f28d635a299e4b5e2fcd43ce00b2eb675358aab
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Thu Oct 1 16:38:53 2020 -0400
+
+    Added documentation and refactored some code
+
+commit 95e6a98c1fb6d980bdb658f46e0c34d2acb696cd
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Thu Oct 1 16:36:34 2020 -0400
+
+    Created scanner, matrix, and tokenize program files

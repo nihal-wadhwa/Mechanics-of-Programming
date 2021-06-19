@@ -1,0 +1,150 @@
+Lab 1: System Intro
+Activity 1: questions1.txt, warning.c : 30 points total
+
+Name: <<< Nihal Wadhwa >>>
+
+questions1.txt: points are given below for each part of each question.
+
+
+1. When you first log in, what is the absolute path of your home directory?
+
+	Write the FULL and COMPLETE command AND the answer it would print.
+
+	:  2 points
+    <<< YOUR ANSWER BELOW HERE (and do not remove this line)
+	pwd
+	/home/stu9/s14/nw7554
+
+2. What command will display the contents of your current
+   working directory, so that it shows the difference between
+   files and directories?
+
+	Write the FULL and COMPLETE command that would do the job.
+
+	:  2 points
+    <<< YOUR ANSWER BELOW HERE (and do not remove this line)
+	ls
+
+3. What command would you use to change your working directory from
+   your home directory to an existing subdirectory named Courses?
+
+	Write the FULL and COMPLETE command that would do the job.
+
+	:  2 points
+    <<< YOUR ANSWER BELOW HERE (and do not remove this line)
+	cd Courses
+
+4. Within the Courses subdirectory, what command would you use to
+   create the subdirectory csci243.
+
+	Write the FULL and COMPLETE command that would do the job.
+
+	:  2 points
+    <<< YOUR ANSWER BELOW HERE (and do not remove this line)
+	mkdir csci243
+
+5. When warning.c is compiled like this: gcc -o warning warning.c
+
+   There is only 1 warning of possible problems, but there are more.
+
+   You will have to fix this problem, but first answer parts a and b.
+
+
+    a.) What 2 compiler flags always should be used to display more warnings?
+    
+	:  2 points
+    <<< YOUR ANSWER BELOW HERE (and do not remove this line)
+	-Wall -Wextra
+    
+    b.) There is also a 'super-picky' warning flag; what is it? 
+
+        :  1 points
+    <<< YOUR ANSWER BELOW HERE (and do not remove this line)
+	-pedantic
+
+    c.) Now it is time to start work compiling and fixing warning.c.
+
+	Each flag, including the 'picky' flag, identifies a particular issue.
+
+        Follow these steps. 
+	DO NOT CHANGE warning.c UNTIL AFTER COMPLETING NUMBER PART c.4 below.
+
+	1. compile warning.c using NO compiler flag options.
+	2. compile warning.c with only the first warning flag added.
+	3. compile warning.c with only the second warning flag added.
+	4. compile warning.c with only the picky warning flag added.
+
+	For each step:
+		- IDENTIFY the flag (if any) and, in your own words,
+		explain the warnings found by that flag.
+		- INVESTIGATE and plan how to fix the problem.
+
+        The format of the answer has been started for you. Fill in _______
+        with the warning flag, and add your explanation on line(s) below that.
+
+	:  4 points
+    <<< YOUR ANSWER BELOW HERE (and do not remove this line)
+
+	1. Flag: None. Explanation :No flags used
+				    Issues: argument 1 of compute makes
+				    integer from pointer without cast and
+				    argument expected to be int not int pointer.
+				    Plan: check argument to see what type is required
+				    for argument in question
+
+	2. Flag: -Wall. Explanation: Additional Issues:
+				      argument missing in the main function,
+				     year_offset is not initialized to be used in compute function,
+				     Plan:
+                                     Since both of these arguments are based off lack of
+				     arguments, amending the arguments for the main function and the
+				     variables should resolve the issue.
+	
+	3. Flag:  -Wextra . Explanation: No additional issues detected
+					 argument 1 of compute makes integer from pointer without cast
+					 argument missing in the main function
+					 year_offset is not initialized to be used in compute function
+
+	4. Flag:  -pedantic . Explanation: Additional Issues:
+					   argument 1 of compute makes integer from pointer without cast
+					   Empty array initialization not allowed,
+					   neither is initialization with empty braces.
+					   Plan: Since the program calls for century being an int based on
+			      		   the args values, it would be best to change
+					   century from being an array to an int.
+
+
+
+    d.) Fix warning.c so it compiles without warnings and runs correctly to
+	produce the output specified in the code documentation.
+
+	:  10 points
+    YOUR ANSWER IS THE SUBMITTED CODE.
+
+	Overall, make the necessary repairs to remove warnings, and
+	rewrite the code to produce the correct results.
+
+	WAIT, THERE'S MORE! Check the returns...
+	You also must fix a runtime logic error that no warning flag catches.
+
+
+6. What compiler flag compiles C programs using the ISO C99 standard?
+
+	Write only the flag value to answer this question.
+
+	:  2 points
+    <<< YOUR ANSWER BELOW HERE (and do not remove this line)
+        -std=c99
+   
+7. Put these steps of the compilation process into their proper order from
+   first to last.
+
+    A. Preprocess
+    B. Compile
+    C. Assemble
+    D. Link
+    
+	:  3 points
+
+    <<< YOUR ANSWER BELOW HERE (and do not remove this line)
+	Accidentally,reordered the the steps instead of using letters

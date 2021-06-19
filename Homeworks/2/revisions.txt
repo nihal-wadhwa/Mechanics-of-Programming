@@ -1,0 +1,5 @@
+commit d46d16250467385800413e38841cc51971ce0080
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Fri Sep 4 16:27:06 2020 -0400
+
+    Finalized stats.h, stats.c, and review_grades.c for submission

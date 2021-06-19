@@ -1,0 +1,46 @@
+Lab 1: System Intro
+Activity 2: questions2.txt, main/circle code : 30 points total
+
+Name: <<< Nihal Wadhwa >>>
+
+questions2.txt: points are given below for each part of this activity.
+
+Submitted Code:
+
+	: 10 points
+	Code was edited so that it compiles, links and runs correctly.
+
+	:  8 points
+	No other, uncalled-for edits were made, and style is consistent.
+	Author name is in the source file comments of each file.
+
+
+8. Given the program files main.c, circle.h and circle.c:
+
+    a.) What command(s) will compile the source files into object files?
+
+	Use all the flags that this assignment has recommended.
+	Write the FULL and COMPLETE command(s) that would do the job.
+
+	:  4 points
+        <<< YOUR ANSWER BELOW HERE (and do not remove this line)
+	gcc -std=c99 -Wall -Wextra -pedantics -c circle.c
+	gcc -std=c99 -Wall -Wextra -pedantics -c main.c
+
+    b.) What command(s) will link the object files into an executable
+    that is named broken?
+
+	Use all the flags that this assignment has recommended.
+	Write the FULL and COMPLETE command(s) that would do the job.
+
+	:  4 points
+        <<< YOUR ANSWER BELOW HERE (and do not remove this line)
+	gcc -std=c99 -o broken main.o circle.o -lm
+
+    c.) Why does the program compile but fail to link?
+
+	:  4 points
+        <<< YOUR ANSWER BELOW HERE (and do not remove this line)
+	In the main.c file, the function call getAreas needed to be corrected
+	to getArea to work with the circle.c file. 
+

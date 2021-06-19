@@ -1,0 +1,90 @@
+(gdb) run
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+Starting program: /home/stu9/s14/nw7554/Courses/CS243/Homeworks/3/act1/good-life 123
+
+        ..Welcome to the Game of life..
+
+Please enter the initial number of organisms: 123
+
+Program received signal SIGSEGV, Segmentation fault.
+__strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:62
+62      ../sysdeps/x86_64/multiarch/strlen-avx2.S: No such file or directory.
+(gdb) where
+#0  __strlen_avx2 () at ../sysdeps/x86_64/multiarch/strlen-avx2.S:62
+#1  0x00007ffff7a41563 in _IO_vfprintf_internal (s=0x7ffff7dd0760 <_IO_2_1_stdout_>,
+    format=0x555555554ff3 "%s", ap=ap@entry=0x7fffffffe4e0) at vfprintf.c:1643
+#2  0x00007ffff7a48fa6 in __printf (format=<optimized out>) at printf.c:33
+#3  0x0000555555554df8 in main () at good-life.c:143
+(gdb) list
+57      in ../sysdeps/x86_64/multiarch/strlen-avx2.S
+(gdb) break
+Breakpoint 1 at 0x7ffff7b72811: file ../sysdeps/x86_64/multiarch/strlen-avx2.S, line 62.
+(gdb) info break
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x00007ffff7b72811 ../sysdeps/x86_64/multiarch/strlen-avx2.S:62
+(gdb) break 57
+Breakpoint 2 at 0x7ffff7b72809: /build/glibc-2ORdQG/glibc-2.27/string/../sysdeps/x86_64/multiarch/strlen-avx2.S:57. (2 locations)
+(gdb) delete breakpoint 1
+(gdb) info
+"info" must be followed by the name of an info command.
+List of info subcommands:
+
+info address -- Describe where symbol SYM is stored
+info all-registers -- List of all registers and their contents
+info args -- Argument variables of current stack frame
+info auto-load -- Print current status of auto-loaded files
+info auxv -- Display the inferior's auxiliary vector
+info bookmarks -- Status of user-settable bookmarks
+info breakpoints -- Status of specified breakpoints (all user-settable breakpoints if no argument)
+info checkpoints -- IDs of currently known checkpoints
+info classes -- All Objective-C classes
+info common -- Print out the values contained in a Fortran COMMON block
+info copying -- Conditions for redistributing copies of GDB
+info dcache -- Print information on the dcache performance
+info display -- Expressions to display when program stops
+info exceptions -- List all Ada exception names
+info extensions -- All filename extensions associated with a source language
+info files -- Names of targets and files being debugged
+info float -- Print the status of the floating point unit
+info frame -- All about selected stack frame
+info frame-filter -- List all registered Python frame-filters
+info functions -- All function names
+info guile -- Prefix command for Guile info displays
+info handle -- What debugger does when program gets various signals
+info inferiors -- IDs of specified inferiors (all inferiors if no argument)
+info line -- Core addresses of the code for a source line
+info locals -- Local variables of current stack frame
+info macro -- Show the definition of MACRO
+info macros -- Show the definitions of all macros at LINESPEC
+info mem -- Memory region attributes
+info os -- Show OS data ARG
+info pretty-printer -- GDB command to list all registered pretty-printers
+info probes -- Show available static probes
+info proc -- Show /proc process information about any running process
+info program -- Execution status of the program
+info record -- Info record options
+info registers -- List of integer registers and their contents
+info scope -- List the variables local to a scope
+info selectors -- All Objective-C selectors
+info set -- Show all GDB settings
+info sharedlibrary -- Status of loaded shared object libraries
+info signals -- What debugger does when program gets various signals
+info skip -- Display the status of skips
+info source -- Information about the current source file
+info sources -- Source files in the program
+info stack -- Backtrace of the stack
+info static-tracepoint-markers -- List target static tracepoints markers
+---Type <return> to continue, or q <return> to quit---q
+Quit
+(gdb) info break
+Num     Type           Disp Enb Address            What
+2       breakpoint     keep y   <MULTIPLE>
+2.1                         y     0x00007ffff7b72809 ../sysdeps/x86_64/multiarch/strlen-avx2.S:57
+2.2                         y     0x00007ffff7b729a5 ../sysdeps/x86_64/multiarch/strlen-avx2.S:57
+(gdb) delete breakpoint 2
+(gdb) info break
+No breakpoints or watchpoints.
+(gdb) break 57
+Breakpoint 3 at 0x7ffff7b72809: /build/glibc-2ORdQG/glibc-2.27/string/../sysdeps/x86_64/multiarch/strlen-avx2.S:57. (2 locations)
+

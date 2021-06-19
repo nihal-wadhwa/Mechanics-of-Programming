@@ -1,0 +1,113 @@
+commit 28cac0b3f5a8c42a72065eeeaaed0baf3718d680
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Thu Nov 12 23:55:05 2020 -0500
+
+    Removed testing print statements
+
+commit 062aa33667286953c9127a178555a7600f06488c
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Thu Nov 12 23:52:32 2020 -0500
+
+    Added some error checking
+
+commit d84df0e5fd64f707a5b9b152ab9b1057d6be8324
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Thu Nov 12 23:37:45 2020 -0500
+
+    FINAL COMMIT: Fixed a rather foolish error
+
+commit 7913eee95f12e0b184996d23501827ad38aa8da3
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Thu Nov 12 23:18:48 2020 -0500
+
+    Added error checking for files
+
+commit c203943565a4c27cbb8dfa37c2711dab31f8ff21
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Thu Nov 12 23:18:19 2020 -0500
+
+    Finalized mirsa lib for submission
+
+commit 3980a13b717ae2d49c51ec773f288748349930b5
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Thu Nov 12 01:04:26 2020 -0500
+
+    Initial implementation of -r flag
+
+commit c3f280ed382c9806b0e3de0cdc0b564468434006
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Thu Nov 12 01:03:30 2020 -0500
+
+    Added documentation
+
+commit 814d8e12ac07505d26de331a66ab79a3656455a4
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Wed Nov 11 21:55:41 2020 -0500
+
+    Intial commit for mirsa_rw to test code
+
+commit 9514548b8de9cec8aba678c7fe0397bb8413e2d6
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Wed Nov 11 21:54:09 2020 -0500
+
+    Initialized  encode, decode, encrypt, and decrypt
+
+commit 696546e0f5ab5172786ce57ec41d6e8460514e16
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Tue Oct 27 22:38:42 2020 -0400
+
+    Added additional error handling
+
+commit 88498eb2ec9482600c5862e55f356b453288a572
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Tue Oct 27 22:25:06 2020 -0400
+
+    Added some error handling.
+
+commit bbf46ae05274d7deff889ab9294152e9631dd747
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Tue Oct 27 22:23:32 2020 -0400
+
+    Added some error handling and documentation
+
+commit 0a9c8a97bbbfee13e56c98c62f8e3db95964f3b8
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Tue Oct 27 20:53:12 2020 -0400
+
+    Added documentation to functions
+
+commit d7077287c46b9dc0c0d745a851f9d3d090d179b6
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Tue Oct 27 20:13:56 2020 -0400
+
+    Added some errors issues and dealt with overflow
+
+commit e2ce3e7eb51340d0d1480cd065e3d8289282030e
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Tue Oct 27 15:47:38 2020 -0400
+
+    Removed hard coded p,q values, use prime file.
+
+commit 7847b18993c85b3993454f8bb6dd910cda060690
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Tue Oct 27 15:46:46 2020 -0400
+
+    Stubbed out functions. Implemented read keyfile.
+
+commit bb382545a748cdbc34c0ac4eda3b0c7467e3b664
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Tue Oct 27 12:39:26 2020 -0400
+
+    Initial creation of mirsa lib with key gen function
+
+commit f33a13ef6f941fd10f6872d42d330e8b3955c6a3
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Tue Oct 27 12:38:38 2020 -0400
+
+    Initial creation of main program without prime arr
+
+commit be8d188720efc19595ba1bbe02b2cf24cb56f669
+Author: Nihal  Wadhwa <nw7554@cs.rit.edu>
+Date:   Tue Oct 20 19:36:11 2020 -0400
+
+    initial provisioning
